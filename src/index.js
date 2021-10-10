@@ -10,7 +10,7 @@ const port = process.env.PORT || 4000
 const productRoutes = require('./routes/product');
 const cartRoutes = require('./routes/cart');
 const checkoutRoutes = require('./routes/checkout');
-const testRoutes = require('./routes/test');
+
 
 
 
@@ -38,8 +38,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api',productRoutes);
 app.use('/api',cartRoutes);
 app.use('/api',checkoutRoutes);
-app.use('/api',testRoutes);
-testRoutes
+
+
 app.listen(port,() =>{
     console.log(`Server is running on port ${port}`);
 });
